@@ -21,8 +21,8 @@ if [ "n" != $ans ]
 then
 # install git
 sudo apt install git
-sudo apt update
-sudo apt install libz-dev libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext cmake gcc
+sudo apt update -y
+sudo apt install libz-dev libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext cmake gcc -y
 echo "Enter your GitHub username"
 read usrnm
 echo "Enter your gitHub email"
@@ -43,17 +43,17 @@ fi
 
 echo "Installing essentials..."
 echo "Installing nvtop..."
-sudo apt install nvtop 
+sudo apt install nvtop -y
 echo "Installing tmux..."
-sudo apt install tmux 
+sudo apt install tmux -y
 echo "Installing net-tools..."
-sudo apt install net-tools
+sudo apt install net-tools -y
 echo "Installing SSH..."
-sudo apt install openssh-server
+sudo apt install openssh-server -y
 echo "Installing VSCode..."
-sudo snap install code --classic
+sudo snap install code --classic -y
 echo "Installing Gnome Tweaks..."
-sudo apt install gnome-tweak-tool
+sudo apt install gnome-tweak-tool -y
 
 
 echo "Do you want to install Whitesur GTK theme?"
