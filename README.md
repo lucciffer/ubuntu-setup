@@ -12,3 +12,6 @@ Packages installed by default:
 4. openssh-server
 5. VSCode
 6. Gnome Tweaks
+
+To start set-up process
+```sh setup.sh```
