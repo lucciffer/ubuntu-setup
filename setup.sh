@@ -56,6 +56,16 @@ echo "Installing Gnome Tweaks..."
 sudo apt install gnome-tweak-tool
 
 
+echo "Do you want to install Whitesur GTK theme?"
+read ans
+if ["n" != ans]
+then
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
+cd WhiteSur-gtk-theme
+./install.sh -c dark -c light
+./install.sh -i ubuntu
+fi
+
 echo "Do you want to install AnyDesk?"
 read ans
 if ["n" != $anyans]
