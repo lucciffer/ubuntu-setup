@@ -20,5 +20,7 @@ Packages and Softwares installed by this sh file:
 5. VSCode
 6. Gnome Tweaks  
 
-To start set-up process
+To start set-up process  
+```git clone https://github.com/lucciffer/ubuntu-setup.git```  
+```cd ubuntu-setup```  
 ```sh setup.sh```
