@@ -1,5 +1,10 @@
 # ubuntu-setup
-Run the bash file to set-up freshly installed Ubuntu desktop  
+Run the bash file to set-up freshly installed Ubuntu desktop   
+To start set-up process  
+```git clone https://github.com/lucciffer/ubuntu-setup.git```  
+```cd ubuntu-setup```  
+```sh setup.sh```
+
 Packages and Softwares installed by this sh file:    
 `Optional packages`  
 1. Slack  
@@ -20,7 +25,3 @@ Packages and Softwares installed by this sh file:
 5. VSCode
 6. Gnome Tweaks  
 
-To start set-up process  
-```git clone https://github.com/lucciffer/ubuntu-setup.git```  
-```cd ubuntu-setup```  
-```sh setup.sh```
