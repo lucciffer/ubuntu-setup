@@ -1,9 +1,11 @@
 # ubuntu-setup
 Run the bash file to set-up freshly installed Ubuntu desktop   
 To start set-up process  
-```git clone https://github.com/lucciffer/ubuntu-setup.git```  
-```cd ubuntu-setup```  
-```sh setup.sh```
+```
+git clone https://github.com/lucciffer/ubuntu-setup.git    
+cd ubuntu-setup    
+sh setup.sh
+```
 
 Packages and Softwares installed by this sh file:    
 `Optional packages`  
