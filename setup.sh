@@ -25,9 +25,9 @@ sudo apt update -y
 sudo apt install libz-dev libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext cmake gcc -y
 echo "Enter your GitHub username"
 read usrnm
+git config --global user.name "$usrnm"
 echo "Enter your gitHub email"
 read gemail
-git config --global user.name "$usrnm"
 git config --global user.email "$gemail"
 echo "git configured!"
 fi
@@ -68,7 +68,7 @@ fi
 
 echo "Do you want to install AnyDesk?"
 read ans
-if [ "n" != $anyans ]
+if [ "n" != $ans ]
 then
 sudo apt install anydesk
 fi
