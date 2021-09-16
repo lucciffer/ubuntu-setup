@@ -51,6 +51,10 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 fi
 
+echo "Do you want to install essentials?"
+read ans 
+if [ "n" != $ans ]
+then
 echo "Installing essentials..."
 echo "Installing nvtop..."
 sudo apt install nvtop -y
@@ -64,7 +68,7 @@ echo "Installing VSCode..."
 sudo snap install code --classic -y
 echo "Installing Gnome Tweaks..."
 sudo apt install gnome-tweak-tool -y
-
+fi
 
 echo "Do you want to install Whitesur GTK theme?"
 read ans
@@ -80,7 +84,7 @@ echo "Do you want to install AnyDesk?"
 read ans
 if [ "n" != $ans ]
 then
-sudo apt install anydesk
+sudo apt install anydesk -y
 fi
 
 
