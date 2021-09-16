@@ -32,6 +32,16 @@ git config --global user.email "$gemail"
 echo "git configured!"
 fi
 
+echo "Do you want to install miniconda?"
+read ans
+if [ "n" != $ans ]
+then 
+wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh
+./Miniconda3-py38_4.10.3-Linux-x86_64.sh
+echo "Miniconda installed!!"
+fi
+
+
 echo "Do you want to install Chrome (y/n)?"
 read ans
 if [ "n" != $ans ]
