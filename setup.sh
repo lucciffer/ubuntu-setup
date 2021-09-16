@@ -70,6 +70,29 @@ echo "Installing Gnome Tweaks..."
 sudo apt install gnome-tweak-tool -y
 fi
 
+echo "Do you want to install OneNote?"
+read ans
+if [ "n" != $ans ]
+then 
+sudo snap install p3x-onenote
+fi
+
+echo "Do you want to install meshlab?"
+read ans
+if [ "n" != $ans]
+then
+sudo snap install meshlab
+fi
+
+echo "Do you want to install GIMP?"
+read ans
+if [ "n" != $ans ]
+then 
+sudo snap install gimp
+fi
+
+
+
 echo "Do you want to install Whitesur GTK theme?"
 read ans
 if [ "n" != $ans ]
