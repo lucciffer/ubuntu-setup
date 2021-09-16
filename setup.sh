@@ -37,7 +37,7 @@ read ans
 if [ "n" != $ans ]
 then 
 wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh
-./Miniconda3-py38_4.10.3-Linux-x86_64.sh
+sh ./Miniconda3-py38_4.10.3-Linux-x86_64.sh
 echo "Miniconda installed!!"
 fi
 
