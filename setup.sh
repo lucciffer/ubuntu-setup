@@ -101,7 +101,12 @@ then
 sudo snap install blender
 fi
 
-
+echo "Do you want to install Discord?"
+read ans
+if [ "n" != $ans ]
+then 
+sudo snap install discord
+fi
 
 echo "Do you want to install Whitesur GTK theme?"
 read ans
