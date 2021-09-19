@@ -65,7 +65,7 @@ sudo apt install net-tools -y
 echo "Installing SSH..."
 sudo apt install openssh-server -y
 echo "Installing VSCode..."
-sudo snap install code --classic -y
+sudo snap install code --classic 
 echo "Installing Gnome Tweaks..."
 sudo apt install gnome-tweak-tool -y
 fi
