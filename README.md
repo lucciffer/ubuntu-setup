@@ -17,7 +17,10 @@ Packages and Softwares installed by this sh file:
 7. GIMP
 8. OneNote
 9. Meshlab
-10. Miniconda  
+10. Miniconda 
+11. Blender  
+12. Discord  
+13. Microsoft Teams   
 
 `Essentials`  
 1. nvtop
