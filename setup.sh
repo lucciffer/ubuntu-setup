@@ -68,6 +68,9 @@ echo "Installing VSCode..."
 sudo snap install code --classic 
 echo "Installing Gnome Tweaks..."
 sudo apt install gnome-tweak-tool -y
+echo "Installing gnome shell extensions..."
+sudo apt install gnome-shell-extensions -y
+sudo apt install chrome-gnome-shell -y
 fi
 
 echo "Do you want to install OneNote?"
@@ -89,6 +92,13 @@ read ans
 if [ "n" != $ans ]
 then 
 sudo snap install gimp
+fi
+
+echo "Do you want to install Blender?"
+read ans
+if [ "n" != $ans ]
+then 
+sudo snap install blender
 fi
 
 
