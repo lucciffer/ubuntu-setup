@@ -108,6 +108,15 @@ then
 sudo snap install discord
 fi
 
+echo "Do you want to install Microsoft Teams?"
+read ans
+if [ "n" != $ans ]
+then
+wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.13653_amd64.deb
+sudo dpkg -i teams_1.4.00.13653_amd64.deb
+fi
+
+
 echo "Do you want to install Whitesur GTK theme?"
 read ans
 if [ "n" != $ans ]
