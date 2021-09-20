@@ -131,7 +131,8 @@ echo "Do you want to install AnyDesk?"
 read ans
 if [ "n" != $ans ]
 then
-sudo apt install anydesk -y
+wget https://download.anydesk.com/linux/anydesk_6.1.1-1_amd64.deb
+sudo apt install ./anydesk_6.1.1-1_amd64.deb
 fi
 
 
