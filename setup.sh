@@ -89,7 +89,7 @@ fi
 
 echo "Do you want to install meshlab?"
 read ans
-if [ "n" != $ans]
+if [ "n" != $ans ]
 then
 sudo snap install meshlab
 fi
