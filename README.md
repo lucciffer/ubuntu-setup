@@ -14,6 +14,7 @@ Packages and Softwares installed by this sh file:
 3. Chrome
 4. Anydesk  
 5. Whitesur GTK Theme   
+6. Whitesur Icon Theme     
 7. GIMP
 8. OneNote
 9. Meshlab
