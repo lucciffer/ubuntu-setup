@@ -22,7 +22,7 @@ Packages and Softwares installed by this sh file:
 12. Discord  
 13. Microsoft Teams  
 14. Notion  
-15. LaTeX tools adn Texmaker   
+15. LaTeX tools and Texmaker   
 
 `Essentials`  
 1. nvtop
