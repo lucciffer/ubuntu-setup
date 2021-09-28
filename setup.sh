@@ -80,6 +80,13 @@ then
 sudo snap install p3x-onenote
 fi
 
+echo "Do you want to install Notion?"
+read ans
+if [ "n" != $ans ]
+then 
+sudo snap install notion-snap
+fi
+
 echo "Do you want to install meshlab?"
 read ans
 if [ "n" != $ans]
@@ -125,6 +132,26 @@ git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
 cd WhiteSur-gtk-theme
 ./install.sh -c dark -c light
 ./install.sh -i ubuntu
+echo "Whitesur theme installed, Head over to Gnome-Tweaks and change the theme"
+fi
+
+echo "Do you want to install Whitesur icon pack?"
+read ans
+if [ "n" != $ans ]
+then 
+git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
+cd WhiteSur-icon-theme
+./install.sh
+echo "Icon pack installed, Head over to Gnome-Tweaks and change the icon theme"
+fi
+
+echo "Do you want to install LaTeX tools for Ubuntu?"
+read ans
+if [ "n" != $ans ]
+then
+sudo apt update
+sudo apt install texlive-full
+sudo apt install texmaker
 fi
 
 echo "Do you want to install AnyDesk?"
