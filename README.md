@@ -20,7 +20,9 @@ Packages and Softwares installed by this sh file:
 10. Miniconda 
 11. Blender  
 12. Discord  
-13. Microsoft Teams   
+13. Microsoft Teams  
+14. Notion  
+15. LaTeX tools adn Texmaker   
 
 `Essentials`  
 1. nvtop
