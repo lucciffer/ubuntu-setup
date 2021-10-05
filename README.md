@@ -24,6 +24,7 @@ Packages and Softwares installed by this sh file:
 13. Microsoft Teams  
 14. Notion  
 15. LaTeX tools and Texmaker   
+16. VLC media player  
 
 `Essentials`  
 1. nvtop
