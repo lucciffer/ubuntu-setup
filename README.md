@@ -33,4 +33,4 @@ Packages and Softwares installed by this sh file:
 4. openssh-server
 5. VSCode
 6. Gnome Tweaks  
-
+7. Docker  
