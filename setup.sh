@@ -182,6 +182,13 @@ then
 sudo snap install spotify
 fi
 
+echo "Do you want to install WhatsApp?"
+read ans
+if [ "n" != $ans ]
+then 
+sudo snap install whatsdesk
+fi
+
 sudo apt autoremove -y 
 sudo apt autoclean -y
 
