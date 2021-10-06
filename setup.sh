@@ -163,8 +163,8 @@ read ans
 if [ "n" != $ans ]
 then
 sudo apt update
-sudo apt install texlive-full
-sudo apt install texmaker
+sudo apt install texlive-full -y
+sudo apt install texmaker -y
 fi
 
 echo "Do you want to install AnyDesk?"
@@ -172,7 +172,7 @@ read ans
 if [ "n" != $ans ]
 then
 wget https://download.anydesk.com/linux/anydesk_6.1.1-1_amd64.deb
-sudo apt install ./anydesk_6.1.1-1_amd64.deb
+sudo apt install ./anydesk_6.1.1-1_amd64.deb -y
 fi
 
 echo "Do you want to install Spotify?"
