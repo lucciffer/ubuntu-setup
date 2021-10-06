@@ -175,9 +175,18 @@ wget https://download.anydesk.com/linux/anydesk_6.1.1-1_amd64.deb
 sudo apt install ./anydesk_6.1.1-1_amd64.deb
 fi
 
+echo "Do you want to install Spotify?"
+read ans
+if [ "n" != $ans ]
+then 
+sudo snap install spotify
+fi
 
 sudo apt autoremove -y 
 sudo apt autoclean -y
 
 
 echo "Set-up finished!!"
+
+cd ..
+rm -rf ubuntu-setup
