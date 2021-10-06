@@ -194,7 +194,7 @@ sudo apt autoclean -y
 
 echo "Set-up finished!!"
 
-_mydir="$(pwd)"
+mydir="$(pwd)"
 
-echo $_mydir
-sudo rm -rf $_mydir
+echo $mydir
+sudo rm -rf $mydir
