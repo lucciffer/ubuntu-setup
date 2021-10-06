@@ -163,8 +163,7 @@ read ans
 if [ "n" != $ans ]
 then
 sudo apt update
-sudo apt install texlive-full -y
-sudo apt install texmaker -y
+sudo apt install texlive-full texmaker -y
 fi
 
 echo "Do you want to install AnyDesk?"
