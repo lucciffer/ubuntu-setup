@@ -188,5 +188,7 @@ sudo apt autoclean -y
 
 echo "Set-up finished!!"
 
-cd ..
-rm -rf ubuntu-setup
+_mydir="$(pwd)"
+
+echo $_mydir
+sudo rm -rf $_mydir
