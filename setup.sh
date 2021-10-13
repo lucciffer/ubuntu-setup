@@ -48,6 +48,13 @@ then
 sh ./docker_installer.sh
 fi
 
+echo "Do you want to install and configure Samba?"
+read ans
+if [ "n" != $ans ]
+then 
+sh ./samba_configuration.sh
+fi 
+
 
 echo "Do you want to install Chrome (y/n)?"
 read ans
