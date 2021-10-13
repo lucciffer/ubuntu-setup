@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install samba
+sudo apt install samba -y
 
 mkdir ~/sambashare
 
