@@ -32,7 +32,7 @@ git config --global user.email "$gemail"
 echo "git configured!"
 fi
 
-echo "Do you want to install miniconda?"
+echo "Do you want to install miniconda (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
@@ -41,14 +41,14 @@ sh ./Miniconda3-py38_4.10.3-Linux-x86_64.sh
 echo "Miniconda installed!!"
 fi
 
-echo "Do you want to install Docker?"
+echo "Do you want to install Docker (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
 sh ./docker_installer.sh
 fi
 
-echo "Do you want to install and configure Samba?"
+echo "Do you want to install and configure Samba (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
@@ -65,7 +65,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 fi
 
-echo "Do you want to install essentials?"
+echo "Do you want to install essentials (y/n)?"
 read ans 
 if [ "n" != $ans ]
 then
@@ -87,49 +87,49 @@ sudo apt install gnome-shell-extensions -y
 sudo apt install chrome-gnome-shell -y
 fi
 
-echo "Do you want to install OneNote?"
+echo "Do you want to install OneNote (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
 sudo snap install p3x-onenote
 fi
 
-echo "Do you want to install Notion?"
+echo "Do you want to install Notion (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
 sudo snap install notion-snap
 fi
 
-echo "Do you want to install meshlab?"
+echo "Do you want to install meshlab (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
 sudo snap install meshlab
 fi
 
-echo "Do you want to install GIMP?"
+echo "Do you want to install GIMP (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
 sudo snap install gimp
 fi
 
-echo "Do you want to install Blender?"
+echo "Do you want to install Blender (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
 sudo snap install blender
 fi
 
-echo "Do you want to install Discord?"
+echo "Do you want to install Discord (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
 sudo snap install discord
 fi
 
-echo "Do you want to install Microsoft Teams?"
+echo "Do you want to install Microsoft Teams (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -137,14 +137,14 @@ wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.0
 sudo dpkg -i teams_1.4.00.13653_amd64.deb
 fi
 
-echo "Do you want to install VLC media player?"
+echo "Do you want to install VLC media player (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
 sudo snap install vlc
 fi
 
-echo "Do you want to install Whitesur GTK theme?"
+echo "Do you want to install Whitesur GTK theme (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -155,7 +155,7 @@ cd WhiteSur-gtk-theme
 echo "Whitesur theme installed, Head over to Gnome-Tweaks and change the theme"
 fi
 
-echo "Do you want to install Whitesur icon pack?"
+echo "Do you want to install Whitesur icon pack (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
@@ -165,7 +165,7 @@ cd WhiteSur-icon-theme
 echo "Icon pack installed, Head over to Gnome-Tweaks and change the icon theme"
 fi
 
-echo "Do you want to install LaTeX tools for Ubuntu?"
+echo "Do you want to install LaTeX tools for Ubuntu (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -173,7 +173,7 @@ sudo apt update
 sudo apt install texlive-full texmaker -y
 fi
 
-echo "Do you want to install AnyDesk?"
+echo "Do you want to install AnyDesk (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -181,14 +181,14 @@ wget https://download.anydesk.com/linux/anydesk_6.1.1-1_amd64.deb
 sudo apt install ./anydesk_6.1.1-1_amd64.deb -y
 fi
 
-echo "Do you want to install Spotify?"
+echo "Do you want to install Spotify (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
 sudo snap install spotify
 fi
 
-echo "Do you want to install WhatsApp?"
+echo "Do you want to install WhatsApp (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
