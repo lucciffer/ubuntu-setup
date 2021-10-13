@@ -25,7 +25,10 @@ Packages and Softwares installed by this sh file:
 14. Notion  
 15. LaTeX tools and Texmaker   
 16. VLC media player  
-17. Spotify
+17. Spotify  
+18. WhatsApp  
+19. Telegram Desktop  
+20. KeepassXC  
 
 `Essentials`  
 1. nvtop

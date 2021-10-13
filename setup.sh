@@ -195,6 +195,21 @@ then
 sudo snap install whatsdesk
 fi
 
+echo "Do you want to install Telegram Desktop (y/n)?"
+read ans
+if [ "n" != $ans ]
+then
+sudo snap install telegram-desktop 
+fi 
+
+echo "Do you want to install KeepassXC (y/n)?"
+read ans 
+if [ "n" != $ans ]
+then 
+sudo snap install keepassxc 
+fi 
+
+
 sudo apt autoremove -y 
 sudo apt autoclean -y
 
