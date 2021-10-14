@@ -36,7 +36,7 @@ echo "Do you want to install miniconda (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
-wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh --no-check-certificate
 sh ./Miniconda3-py38_4.10.3-Linux-x86_64.sh
 echo "Miniconda installed!!"
 fi
@@ -61,7 +61,7 @@ read ans
 if [ "n" != $ans ]
 then
 # install chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --no-check-certificate
 sudo apt install ./google-chrome-stable_current_amd64.deb
 fi
 
@@ -133,7 +133,7 @@ echo "Do you want to install Microsoft Teams (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
-wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.13653_amd64.deb
+wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.13653_amd64.deb --no-check-certificate
 sudo dpkg -i teams_1.4.00.13653_amd64.deb
 fi
 
@@ -177,7 +177,7 @@ echo "Do you want to install AnyDesk (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
-wget https://download.anydesk.com/linux/anydesk_6.1.1-1_amd64.deb
+wget https://download.anydesk.com/linux/anydesk_6.1.1-1_amd64.deb --no-check-certificate
 sudo apt install ./anydesk_6.1.1-1_amd64.deb -y
 fi
 
