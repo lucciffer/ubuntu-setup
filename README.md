@@ -38,4 +38,4 @@ Packages and Softwares installed by this sh file:
 5. VSCode
 6. Gnome Tweaks  
 7. Docker  
-8. Samba
+8. Samba (includes configuration)
