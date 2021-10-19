@@ -62,13 +62,9 @@ if [ "n" != $ans ]
 then
 # install chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --no-check-certificate
-sudo apt install ./google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb 
 fi
 
-echo "Do you want to install essentials (y/n)?"
-read ans 
-if [ "n" != $ans ]
-then
 echo "Installing essentials..."
 echo "Installing nvtop..."
 sudo apt install nvtop -y
@@ -85,7 +81,7 @@ sudo apt install gnome-tweak-tool -y
 echo "Installing gnome shell extensions..."
 sudo apt install gnome-shell-extensions -y
 sudo apt install chrome-gnome-shell -y
-fi
+
 
 echo "Do you want to install OneNote (y/n)?"
 read ans
