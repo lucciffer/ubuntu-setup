@@ -13,8 +13,7 @@ Packages and Softwares installed by this sh file:
 2. Git (includess configuration)
 3. Chrome
 4. Anydesk  
-5. Whitesur GTK Theme   
-6. Whitesur Icon Theme     
+5. Whitesur GTK Theme and Icon pack (includes configuration)  
 7. GIMP
 8. OneNote
 9. Meshlab
