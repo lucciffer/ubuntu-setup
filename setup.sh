@@ -144,26 +144,13 @@ then
 sudo snap install vlc
 fi
 
-echo "Do you want to install Whitesur GTK theme (y/n)?"
+echo "Do you want to install Whitesur GTK theme and Icons pack (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
-cd WhiteSur-gtk-theme
-./install.sh -c dark -c light
-./install.sh -i ubuntu
-echo "Whitesur theme installed, Head over to Gnome-Tweaks and change the theme"
+sh ./whitesur-theme.sh
 fi
 
-echo "Do you want to install Whitesur icon pack (y/n)?"
-read ans
-if [ "n" != $ans ]
-then 
-git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
-cd WhiteSur-icon-theme
-./install.sh
-echo "Icon pack installed, Head over to Gnome-Tweaks and change the icon theme"
-fi
 
 echo "Do you want to install LaTeX tools for Ubuntu (y/n)?"
 read ans
