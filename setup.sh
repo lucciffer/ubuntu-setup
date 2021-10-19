@@ -147,6 +147,12 @@ then
 sh ./whitesur-theme.sh
 fi
 
+echo "Do you want to install Multi-touch gestures for trackpad?"
+read ans 
+if [ "n" != $ans ]
+then 
+sh ./fusuma-config.sh
+fi
 
 echo "Do you want to install LaTeX tools for Ubuntu (y/n)?"
 read ans
