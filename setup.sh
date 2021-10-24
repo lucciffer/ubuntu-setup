@@ -152,6 +152,7 @@ read ans
 if [ "n" != $ans ]
 then 
 sh ./fusuma-config.sh
+sh ./fusuma-config2.sh 
 fi
 
 echo "Do you want to install LaTeX tools for Ubuntu (y/n)?"
