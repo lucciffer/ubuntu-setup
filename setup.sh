@@ -65,6 +65,23 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -
 sudo apt install ./google-chrome-stable_current_amd64.deb 
 fi
 
+echo "Do you want to install brave browser (y/n)"
+read ans
+if [ "n" != $ans ]
+then 
+sudo apt install apt-transport-https curl
+
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+
+sudo apt install brave-browser -y
+fi 
+
+
+
 echo "Installing essentials..."
 echo "Installing nvtop..."
 sudo apt install nvtop -y
@@ -97,6 +114,13 @@ then
 sudo snap install notion-snap
 fi
 
+echo "Do you want to install Xmind (y/n)?"
+read ans
+if [ "n" != $ans ]
+then 
+sudo snap install xmind
+fi
+
 echo "Do you want to install meshlab (y/n)?"
 read ans
 if [ "n" != $ans ]
@@ -115,7 +139,7 @@ echo "Do you want to install Blender (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
-sudo snap install blender
+sudo snap install blender --classic
 fi
 
 echo "Do you want to install Discord (y/n)?"
