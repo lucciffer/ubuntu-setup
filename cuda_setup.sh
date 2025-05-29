@@ -1,5 +1,16 @@
 sudo apt-get update -y
 
+echo "Do you want to purge all existing NVIDIA drivers? (y/n)"
+read purge_choice
+if [ "n" != purge_choice ]; then
+    echo "Purging existing NVIDIA drivers..."
+    sudo apt-get remove --purge '^nvidia-.*'
+    sudo apt-get remove --auto-remove nvidia-cuda-toolkit
+    sudo apt-get --purge remove "*cublas*" "cuda*" "nsight*"
+
+    echo "NVIDIA drivers purged successfully!"
+fi
+
 ubuntu-drivers devices
 
 echo "Please select the NVIDIA driver version you wish to install (e.g., nvidia-driver-535), please refer the list of available driver versions above: (respond with 535 for nvidia-driver-535). Please note: the script currently supports only NVIDIA driver version 535."
@@ -37,10 +48,5 @@ if [[ "$driver_version" == "535" ]]; then
         exit 1
     fi
 fi
-
-
-
-
-
 
 echo "NVIDIA driver installed successfully!"
