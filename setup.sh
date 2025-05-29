@@ -32,6 +32,15 @@ git config --global user.email "$gemail"
 echo "git configured!"
 fi
 
+echo "Do you want to install NVIDIA drivers and CUDA Dependencies (y/n)?"
+read ans
+if [ "n" != $ans ]
+then 
+sh ./cuda_setup.sh
+echo "CUDA Dependencies installed!!"
+fi 
+
+
 echo "Do you want to install miniconda (y/n)?"
 read ans
 if [ "n" != $ans ]
