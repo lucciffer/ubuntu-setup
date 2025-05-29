@@ -36,8 +36,9 @@ echo "Do you want to install miniconda (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
-wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh --no-check-certificate
-sh ./Miniconda3-py38_4.10.3-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh ./Miniconda3-latest-Linux-x86_64.sh
+
 echo "Miniconda installed!!"
 fi
 
