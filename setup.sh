@@ -32,6 +32,14 @@ git config --global user.email "$gemail"
 echo "git configured!"
 fi
 
+echo "Do you want to configure Static IP to the machine (y/n)?"
+read ans
+if [ "n" != $ans ]
+then
+sh ./static_ip_config.sh
+fi
+
+
 echo "Do you want to install NVIDIA drivers and CUDA Dependencies (y/n)?"
 read ans
 if [ "n" != $ans ]
@@ -203,6 +211,14 @@ if [ "n" != $ans ]
 then
 wget https://download.anydesk.com/linux/anydesk_6.1.1-1_amd64.deb --no-check-certificate
 sudo apt install ./anydesk_6.1.1-1_amd64.deb -y
+fi
+
+echo "Do you want to install NoMachine (y/n)?"
+read ans
+if [ "n" != $ans ]
+then
+wget https://download.nomachine.com/download/9.0/Linux/nomachine_9.0.188_11_amd64.deb
+sudo dpkg -i nomachine_9.0.188_11_amd64.deb
 fi
 
 echo "Do you want to install Spotify (y/n)?"
