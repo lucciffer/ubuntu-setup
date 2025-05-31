@@ -1,3 +1,5 @@
+ifconfig
+
 echo "Enter the static IP address you want to set (e.g., 10.2.0.100):"
 read static_ip
 echo "Enter the gateway/subnet mask address (e.g., 255.255.252.0):"
@@ -27,7 +29,7 @@ EOF
 sudo chmod 0600 /etc/netplan/00-installer-config.yaml
 
 sudo netplan apply
-ip addr show eth0
+ifconfig
 echo "Static IP address configured successfully!"
 
 
