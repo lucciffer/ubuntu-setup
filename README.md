@@ -27,21 +27,22 @@ Packages and Softwares installed by this sh file:
 5. Xmind
 6. Anydesk 
 7. NoMachine 
-8. Whitesur GTK Theme and Icon pack (includes configuration)  
-9. Fusuma Multi-touch gestures [for laptop devices]
-10. GIMP
-11. OneNote
-12. Meshlab
-13. Miniconda (latest version)
-14. Blender  
-15. Discord  
-16. Microsoft Teams  
-17. Notion  
-18. LaTeX tools and TexMaker   
-19. VLC media player  
-20. Spotify  
-21. WhatsApp  
-22. Telegram Desktop  
-23. KeepassXC  
+8. RustDesk
+9. Whitesur GTK Theme and Icon pack (includes configuration)  
+10. Fusuma Multi-touch gestures [for laptop devices]
+11. GIMP
+12. OneNote
+13. Meshlab
+14. Miniconda (latest version)
+15. Blender  
+16. Discord  
+17. Microsoft Teams  
+18. Notion  
+19. LaTeX tools and TexMaker   
+20. VLC media player  
+21. Spotify  
+22. WhatsApp  
+23. Telegram Desktop  
+24. KeepassXC  
 
 
