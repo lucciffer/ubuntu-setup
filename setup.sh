@@ -15,6 +15,18 @@ sudo snap install slack --classic
 fi
 
 
+echo "Do you want to install ZSH Shell? (y/n)?"
+read ans
+if [ "n" != $ans ]
+then
+# install zsh
+sudo apt install zsh -y
+# change default shell to zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
+
+
 echo "Do you want to install git (y/n)?"
 read ans
 if [ "n" != $ans ]
