@@ -20,29 +20,30 @@ sh setup.sh
 
 Packages and Softwares installed by this sh file:    
 `Optional packages`  
-1. Slack  
-2. Git (includes configuration)
-3. Chrome
-4. Brave browser
-5. Xmind
-6. Anydesk 
-7. NoMachine 
-8. RustDesk
-9. Whitesur GTK Theme and Icon pack (includes configuration)  
-10. Fusuma Multi-touch gestures [for laptop devices]
-11. GIMP
-12. OneNote
-13. Meshlab
-14. Miniconda (latest version)
-15. Blender  
-16. Discord  
-17. Microsoft Teams  
-18. Notion  
-19. LaTeX tools and TexMaker   
-20. VLC media player  
-21. Spotify  
-22. WhatsApp  
-23. Telegram Desktop  
-24. KeepassXC  
+1. Slack 
+2. ZSH Shell 
+3. Git (includes configuration)
+4. Chrome
+5. Brave browser
+6. Xmind
+7. Anydesk 
+8. NoMachine 
+9. RustDesk
+10. Whitesur GTK Theme and Icon pack (includes configuration)  
+11. Fusuma Multi-touch gestures [for laptop devices]
+12. GIMP
+13. OneNote
+14. Meshlab
+15. Miniconda (latest version)
+16. Blender  
+17. Discord  
+18. Microsoft Teams  
+19. Notion  
+20. LaTeX tools and TexMaker   
+21. VLC media player  
+22. Spotify  
+23. WhatsApp  
+24. Telegram Desktop  
+25. KeepassXC  
 
 
