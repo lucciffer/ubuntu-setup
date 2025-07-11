@@ -233,6 +233,15 @@ wget https://download.nomachine.com/download/9.0/Linux/nomachine_9.0.188_11_amd6
 sudo dpkg -i nomachine_9.0.188_11_amd64.deb
 fi
 
+echo "Do you want to install RustDesk? (y/n)?"
+read ans 
+if [ "n" != $ans ]
+then
+wget https://github.com/rustdesk/rustdesk/releases/download/1.4.0/rustdesk-1.4.0-x86_64.deb
+sudo apt install ./rustdesk-1.4.0-x86_64.deb -y
+fi  
+
+
 echo "Do you want to install Spotify (y/n)?"
 read ans
 if [ "n" != $ans ]
