@@ -155,7 +155,7 @@ echo "Do you want to install meshlab (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
-sudo snap install meshlab
+sudo apt install meshlab -y
 fi
 
 echo "Do you want to install GIMP (y/n)?"
@@ -169,7 +169,8 @@ echo "Do you want to install Blender (y/n)?"
 read ans
 if [ "n" != $ans ]
 then 
-sudo snap install blender --classic
+wget https://www.blender.org/download/release/Blender4.4/blender-4.4.3-linux-x64.tar.xz/
+tar -xf blender-4.4.3-linux-x64.tar.xz
 fi
 
 echo "Do you want to install Discord (y/n)?"
@@ -191,7 +192,7 @@ echo "Do you want to install VLC media player (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
-sudo snap install vlc
+sudo apt install vlc -y
 fi
 
 echo "Do you want to install Whitesur GTK theme and Icons pack (y/n)?"
