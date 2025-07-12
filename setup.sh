@@ -124,9 +124,10 @@ sudo apt install openssh-server -y
 echo "Installing VSCode..."
 sudo snap install code --classic 
 echo "Installing Gnome Tweaks..."
-sudo apt install gnome-tweak-tool -y
+sudo apt install gnome-tweaks -y
 echo "Installing gnome shell extensions..."
 sudo apt install gnome-shell-extensions -y
+sudo apt install gnome-shell-extension-manager -y
 sudo apt install chrome-gnome-shell -y
 
 
