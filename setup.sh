@@ -210,7 +210,8 @@ sh ./fusuma-config.sh
 sh ./fusuma-config2.sh 
 fi
 
-echo "Do you want to install LaTeX tools for Ubuntu (y/n)?"
+echo "Do you want to install LaTeX tools for Ubuntu (y/n)?
+Warning: Installation of LaTeX tools will take quite some time. Only proceed if you have enough time for the installation."
 read ans
 if [ "n" != $ans ]
 then
