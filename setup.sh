@@ -234,6 +234,8 @@ if [ "n" != $ans ]
 then
 wget https://download.nomachine.com/download/9.0/Linux/nomachine_9.0.188_11_amd64.deb
 sudo dpkg -i nomachine_9.0.188_11_amd64.deb
+sudo systemctl stop display-manager
+sudo /etc/NX/nxserver --restart
 fi
 
 echo "Do you want to install RustDesk? (y/n)?"
