@@ -5,7 +5,7 @@
 SAMBA_USER="cvg-shared"
 SAMBA_PASS="cvg#xr"
 SAMBA_DOMAIN="WORKGROUP"  # Change if your server uses a specific domain
-REMOTE_PATH="//10.9.0.114/cvg-archive"
+REMOTE_PATH="//10.9.0.114/cvg-archive/NTIRE2026"
 MOUNT_POINT="/NTIRE2026"
 CREDS_FILE="/etc/samba/.cvgarch_creds"
 
