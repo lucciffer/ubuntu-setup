@@ -2,12 +2,12 @@
 
 # --- CONFIGURATION ---
 # Replace these with your actual details
-SAMBA_USER="cvg-shared"
-SAMBA_PASS="cvg#xr"
+SAMBA_USER="username"
+SAMBA_PASS="password"
 SAMBA_DOMAIN="WORKGROUP"  # Change if your server uses a specific domain
-REMOTE_PATH="//10.9.0.114/cvg-archive/NTIRE2026"
-MOUNT_POINT="/NTIRE2026"
-CREDS_FILE="/etc/samba/.cvgarch_creds"
+REMOTE_PATH="//ip/path/"
+MOUNT_POINT="/path/to/mount"
+CREDS_FILE="/etc/samba/.credentials"
 
 # Ensure the script is run as root
 if [[ $EUID -ne 0 ]]; then
