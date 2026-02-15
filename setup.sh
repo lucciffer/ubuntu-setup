@@ -230,12 +230,33 @@ fi
 
 echo "Do you want to install NoMachine (y/n)?"
 read ans
-if [ "n" != $ans ]
-then
-wget https://download.nomachine.com/download/9.0/Linux/nomachine_9.0.188_11_amd64.deb
-sudo dpkg -i nomachine_9.0.188_11_amd64.deb
-sudo systemctl stop display-manager
-sudo /etc/NX/nxserver --restart
+
+if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
+    wget https://download.nomachine.com/download/9.0/Linux/nomachine_9.0.188_11_amd64.deb
+    
+    # Run installation
+    sudo dpkg -i nomachine_9.0.188_11_amd64.deb
+    
+    # Check if dpkg exited with status 0 (Success)
+    if [ $? -eq 0 ]; then
+        echo "✅ NoMachine installed successfully."
+        
+        # Ask before stopping the display manager
+        echo "Do you want to stop the display manager now? (y/n)"
+        read stop_dm
+        
+        if [ "$stop_dm" = "y" ] || [ "$stop_dm" = "Y" ]; then
+            echo "Stopping display manager and restarting NX server..."
+            sudo systemctl stop display-manager
+            sudo /etc/NX/nxserver --restart
+        else
+            echo "Skipping display manager stop. You may need to restart it manually later."
+        fi
+    else
+        echo "❌ Error: NoMachine installation failed. Display manager will NOT be stopped."
+        # Optional: try to fix broken dependencies often caused by dpkg
+        # sudo apt-get install -f
+    fi
 fi
 
 echo "Do you want to install RustDesk? (y/n)?"
