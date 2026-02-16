@@ -232,10 +232,10 @@ echo "Do you want to install NoMachine (y/n)?"
 read ans
 
 if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
-    wget https://download.nomachine.com/download/9.0/Linux/nomachine_9.0.188_11_amd64.deb
+    wget https://web9001.nomachine.com/download/9.3/Linux/nomachine_9.3.7_1_amd64.deb
     
     # Run installation
-    sudo dpkg -i nomachine_9.0.188_11_amd64.deb
+    sudo dpkg -i nomachine_9.3.7_1_amd64.deb
     
     # Check if dpkg exited with status 0 (Success)
     if [ $? -eq 0 ]; then
