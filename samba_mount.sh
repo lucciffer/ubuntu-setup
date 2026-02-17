@@ -16,7 +16,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 echo "1. Installing cifs-utils..."
-apt update && apt install -y cifs-utils
+apt update && apt install samba && apt install -y cifs-utils
 
 echo "2. Creating mount directory at $MOUNT_POINT..."
 mkdir -p "$MOUNT_POINT"
@@ -32,10 +32,14 @@ EOF
 # Set secure permissions (only root can read/write)
 chmod 600 "$CREDS_FILE"
 
+
+Echo "Current user ID: $(id -u)"
+read -p "Enter the UID to own the mounted share (default 1001): " USER_ID
+
 echo "4. Adding entry to /etc/fstab for persistence..."
 # Check if the entry already exists to avoid duplicates
 if ! grep -q "$REMOTE_PATH" /etc/fstab; then
-    echo "$REMOTE_PATH $MOUNT_POINT cifs credentials=$CREDS_FILE,uid=1001,gid=1001,file_mode=0770,dir_mode=0770,iocharset=utf8,vers=3.0,nounix 0 0" >> /etc/fstab
+    echo "$REMOTE_PATH $MOUNT_POINT cifs credentials=$CREDS_FILE,uid=$USER_ID,gid=$USER_ID,file_mode=0770,dir_mode=0770,iocharset=utf8,vers=3.0,nounix 0 0" >> /etc/fstab
     echo "Added to /etc/fstab."
 else
     echo "Entry already exists in /etc/fstab. Skipping."
